@@ -36,3 +36,16 @@ conda activate azureml_py38_PT_and_TF
 用 VS Code 的 Remote SSH 插件和 Jupyter 插件是一个更现代、更简便的方法！这种方式确实可以替代文档中描述的手动 SSH 隧道设置。
 
 ## Git
+
+install plugins in vscode
+also, generate ssh and set up git
+
+```
+ssh-keygen -t ed25519 -C "jeremy@youngtalent.ai"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
+ssh -T git@github.com
+git clone git@github.com:wgu9/cs234-hw.git
+git config --global user.name "wgu9"
+git config --global user.email "jeremy@youngtalent.ai"
+```
